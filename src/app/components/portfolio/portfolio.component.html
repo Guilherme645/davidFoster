@@ -1,0 +1,11 @@
+<!-- portfolio.component.html -->
+<div class="portfolio-container">
+  <div class="portfolio-item" *ngFor="let foto of fotos" (click)="showImage(foto)">
+    <img [src]="foto.url" [alt]="foto.alt">
+  </div>
+</div>
+
+<!-- Modal (caso você esteja usando algum componente de modal, como o PrimeNG) -->
+<p-dialog [(visible)]="displayModal" [modal]="true" [closable]="true" (onHide)="onModalHide()">
+  <img *ngIf="selectedFoto" [src]="selectedFoto.url" [alt]="selectedFoto.alt" style="width: 100%; height: auto;">
+</p-dialog>

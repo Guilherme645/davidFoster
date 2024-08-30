@@ -1,0 +1,44 @@
+.projetos-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.projetos-titulo {
+  color: #ff9800; /* Cor personalizada para o link */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold; /* Deixa o texto em negrito */
+  transition: color 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave */
+  filter: drop-shadow(10px 0 30px white) ;
+  font-size: 2.3rem;
+  text-align: center;
+
+}
+
+.p-carousel {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.p-carousel .p-carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 160px;
+}
+
+.p-carousel .p-carousel-item img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}

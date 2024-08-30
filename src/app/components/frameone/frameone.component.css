@@ -1,0 +1,99 @@
+body {
+    color: #ffffff; /* Texto branco */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+
+}
+
+.header {
+    color: #ff9800; /* Cor personalizada para o link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave */
+    filter: drop-shadow(10px 0 30px white) ;
+    font-size: 2.3rem;
+}
+
+.header h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.0;
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: flex-start;
+    padding: 10px 0;
+    margin-left: -160px;
+}
+
+.text-section {
+    flex: 1;
+    max-width: 320px; /* Define que a seção de texto ocupe até 45% do espaço disponível */
+    margin-right: 90px; /* Espaçamento entre o texto e as imagens */
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.8; /* Ajusta o espaçamento entre linhas para legibilidade */
+    text-align: justify;
+    margin: 0;
+}
+
+.image-section {
+    display: flex;
+    max-width: 50%; /* Define que a seção de imagem ocupe até 50% do espaço disponível */
+    justify-content: flex-start; /* Alinha as imagens à esquerda */
+    gap: 20px; /* Espaçamento entre as imagens */
+}
+
+.image-section img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.image-section img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Sombra mais intensa ao passar o mouse */
+  }
+  .image-section:hover::after {
+    opacity: 1;
+  }
+  .image-section::after {
+    content: 'Clique para ampliar';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+
+.image-left {
+    flex: 1;
+    margin-left: 0;
+}
+
+.image-right {
+    flex: 1;
+    width: 80px;
+}

@@ -1,0 +1,52 @@
+<mat-card-actions>
+  <p-sidebar [(visible)]="sidebarVisible">
+    <h1>CATEGORIAS</h1>
+    
+    <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+      <p-button label="Galeria" icon="pi pi-code" [rounded]="true" severity="secondary" /> <br><br>
+        <p-button label="Casamento" icon="pi pi-code" [rounded]="true" severity="secondary" /> <br><br>
+        <p-button label="Aniversário"icon="pi pi-home" [rounded]="true" severity="secondary" /><br><br>
+        <p-button label="Corporativo"icon="pi pi-calendar" [rounded]="true" severity="secondary" /><br><br>
+        <p-button  label="Ensaio Feminino"icon="pi pi-user" [rounded]="true" severity="secondary" /><br><br>
+        <p-button label="Ensaio Casal"icon="pi pi-search" [rounded]="true" severity="secondary" /><br><br>
+        <p-button  label="Ensaio Gestante"icon="pi pi-bell" [rounded]="true" severity="secondary" /><br><br>
+        <p-button  label="Família"icon="pi pi-star" [rounded]="true" severity="secondary" /><br><br>
+        <p-button  label="ENSAIO 15 ANOS"icon="pi pi-cog" [rounded]="true" severity="secondary" /><br><br>
+        <p-button  label="FESTA DE 15 ANOS"icon="pi pi-heart" [rounded]="true" severity="secondary" /><br><br>
+        <p-button  label="Ensaio Casal"icon="pi pi-comment" [rounded]="true" severity="secondary" /><br><br>
+        <p-button  label="Aniversário Infantil"icon="pi pi-refresh" [rounded]="true" severity="secondary" />
+    </div>
+  <br>
+    <div class="contact-info">
+      <p>
+        <a href="mailto:guilherme64513@gmail.com">
+          <i class="pi pi-envelope"></i> guilherme64513&#64;gmail.com
+        </a>
+      </p>
+      <p>
+        <a href="tel:+5561984264979">
+          <i class="pi pi-phone"></i> (61) 98426-4979
+        </a>
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/guilherme-carvalho-1b5107262/" target="_blank" class="social-icon">
+          <i class="pi pi-linkedin"></i>
+        </a>
+        <a href="https://github.com/Guilherme645" target="_blank" class="social-icon">
+          <i class="pi pi-github"></i>
+        </a>
+        <a href="https://discord.com/users/guilotus" target="_blank" class="social-icon">
+          <i class="pi pi-discord"></i>
+        </a>
+      </div>
+      <p>&copy; 2024 AllCortex. Todos os direitos reservados.</p>
+    </div>
+  </p-sidebar>
+  
+  <div class="sidebar-button-container">
+    <p-button (click)="sidebarVisible = true" icon="pi pi-list" severity="secondary" class="p-button-code" />
+  </div>
+</mat-card-actions>

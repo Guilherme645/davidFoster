@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+/* styles.css */
+
+body {
+    background-color: #1c1c1c; /* Fundo cinza escuro */
+    color: #ffffff; /* Texto branco */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #ffffff; /* Links brancos */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff9800; /* Cor de hover dos links */
+  }
+  
+  /* Estilo para os componentes do Angular Material, PrimeNG e outros */
+  .mat-toolbar {
+    background-color: #333333; /* Toolbar cinza escuro */
+    color: #ffffff;
+  }
+  
+  p-button {
+    margin: 10px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
