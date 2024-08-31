@@ -28,6 +28,4 @@ export class PortfolioComponent  {
   onModalHide() {
     this.selectedFoto = null;
   }
-
-
 }

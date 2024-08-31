@@ -4,7 +4,7 @@
     background-color: #1c1c1c; /* Fundo cinza escuro */
     color: #ffffff; /* Texto branco */
   }
-  
+
   .home-content {
     max-width: 800px;
     margin: 0 auto;
@@ -13,20 +13,36 @@
   width:680px;
   height: 440px;
   }
- 
+
   .floating-whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
   }
-  .whatsapp-button {
-    background-color: #25D366;
-    color: white;
-    font-size: 2rem;
-    border-radius: 100%;
-    padding: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-  }
-  
+  .floating-whatsapp {
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px;  /* Distância da parte direita da tela */
+    z-index: 1000; /* Garantir que o botão esteja sobre outros elementos */
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    background-color: #25D366; /* Cor de fundo do botão (verde do WhatsApp) */
+    border-radius: 50%; /* Tornar o botão redondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar um efeito de elevação */
+    color: #fff; /* Cor do ícone */
+    text-decoration: none; /* Remover sublinhado do link */
+    font-size: 24px; /* Tamanho do ícone */
+    transition: background-color 0.3s, transform 0.3s; /* Transições para efeito de hover */
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851; /* Cor do botão ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}

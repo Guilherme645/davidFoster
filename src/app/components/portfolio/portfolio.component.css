@@ -18,4 +18,47 @@
   display: block;
   object-fit: cover; /* Garante que a imagem cubra todo o contêiner */
   border-radius: 4px; /* Borda arredondada opcional */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave */
+  cursor: pointer; /* Muda o cursor ao passar sobre a imagem */
+
+}
+.portfolio-item img:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente a escala da imagem */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destaque */
+}
+.portfolio-item img:focus {
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  width: 80vw; /* Largura da imagem ampliada */
+  height: auto;
+  transform: translate(-50%, -50%) scale(1.2); /* Centraliza e amplia a imagem */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+  z-index: 1000; /* Garante que a imagem fique acima de outros elementos */
+}
+
+/* Estilo para fechar a imagem ampliada ao clicar fora dela */
+.portfolio-item img:focus:active {
+  position: static;
+  width: 100%;
+  transform: scale(1);
+  box-shadow: none;
+  z-index: 1;
+}
+
+/* Remove as bordas brancas do modal */
+.ui-dialog .ui-dialog-content {
+  padding: 0; /* Remove o espaçamento interno */
+  background-color: transparent; /* Torna o fundo do modal transparente */
+}
+
+/* Estilize o modal conforme necessário */
+.ui-dialog {
+  box-shadow: none; /* Remove a sombra */
+  background-color: #000; /* Define uma cor de fundo opcional */
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  background-color: #000; /* Troca a cor da barra de título */
+  border: none; /* Remove a borda da barra de título */
 }

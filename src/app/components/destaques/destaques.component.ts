@@ -1,11 +1,11 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-destaques',
   templateUrl: './destaques.component.html',
   styleUrls: ['./destaques.component.css']
 })
-export class DestaquesComponent {
+export class DestaquesComponent implements OnInit {
 
   fotos = [
     { name: 'Fotos 1', image: './assets/foto1.png' },
@@ -16,13 +16,22 @@ export class DestaquesComponent {
     { name: 'Fotos 6', image: './assets/foto6.png' },
   ];
 
+  selectedImage: string | null = null;
+  selectedCaption: string = '';
+
   constructor() {}
 
   ngOnInit(): void {}
 
-  selectProject(project: any) {
-    // Ação ao selecionar o foto (Ex: abrir um modal, redirecionar, etc.)
-    console.log('Fotos selecionado:', project);
+  openModal(image: string) {
+    this.selectedImage = image;
+    const project = this.fotos.find(p => p.image === image);
+    this.selectedCaption = project ? project.name : '';
+    document.getElementById('imageModal')?.style.setProperty('display', 'block');
   }
 
+  closeModal() {
+    this.selectedImage = null;
+    document.getElementById('imageModal')?.style.setProperty('display', 'none');
+  }
 }

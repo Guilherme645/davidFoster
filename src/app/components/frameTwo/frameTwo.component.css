@@ -7,16 +7,17 @@
     /* background-image: url('src/assets/niver.png');  */
 margin-top: 60px;
   }
-  
+
   .projeto-imagem img {
-    width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     margin-top: 90px;
+    margin-left: -180px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   .projeto-imagem img:hover {
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Sombra mais intensa ao passar o mouse */
@@ -39,32 +40,26 @@ margin-top: 60px;
     transition: opacity 0.3s ease;
   }
 
-  .projeto-texto {
-    color: #ffffff;
-    max-width: 50%;
-    padding-left: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
+
   .projeto-link {
     color: #ff9800; /* Cor personalizada para o link */
     text-decoration: none; /* Remove o sublinhado */
     font-weight: bold; /* Deixa o texto em negrito */
     transition: color 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave */
-    margin-left: 450px;
+    margin-left: 300px;
     filter: drop-shadow(10px 0 30px white) ;
     font-size: 2.3rem;
 
   }
-  
+
   .projeto-link:hover {
     color: #e65100; /* Cor ao passar o mouse */
     transform: scale(1.05); /* Aumenta levemente o tamanho do texto ao passar o mouse */
-   
+
   }
-  
+
   .projeto-texto p {
     font-size: 1rem;
-    margin-left: 450px;
+    margin-left: 300px;
+    margin-right: 190px;
   }
-  

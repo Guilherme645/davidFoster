@@ -1,8 +1,14 @@
 <div class="projetos-container">
-  <h2 class="projetos-titulo">PROJETOS EM DESTAQUE</h2>
-  <p-carousel [value]="fotos" [numVisible]="3" [numScroll]="3" [circular]="true" [autoplayInterval]="3000">
+  <h2><a href="https://seulink.com" class="projeto-link">FOTOS EM DESTAQUE</a></h2>  <p-carousel [value]="fotos" [numVisible]="3" [numScroll]="3" [circular]="true" [autoplayInterval]="3000">
     <ng-template let-project pTemplate="item">
-        <img src="{{ project.image }}" alt="{{ project.name }}" class="project-image">
+        <img src="{{ project.image }}" alt="{{ project.name }}" class="project-image" (click)="openModal(project.image)">
     </ng-template>
   </p-carousel>
+</div>
+
+<!-- Modal -->
+<div id="imageModal" class="modal" *ngIf="selectedImage">
+  <span class="close" (click)="closeModal()">&times;</span>
+  <img class="modal-content" [src]="selectedImage" [alt]="selectedImage">
+
 </div>
